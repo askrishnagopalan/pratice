@@ -1,0 +1,319 @@
+package java_practice;
+import java.util.Scanner;
+public class Happypongal
+ {
+	public static void main (String[] args) throws InterruptedException
+	{
+	Scanner sc=new Scanner(System.in);
+	System.out.print("Enter the \"N\" value for display size:");
+	int display= sc.nextInt();
+	System.out.println();
+	Thread.sleep(20);
+	for(int i=0;i<display;i++)
+	{
+		Thread.sleep(20);
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||j==display-1||i==display/2)//H
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(i==0||j==0||i==display/2||j==display-1)//A
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||i==0||i==display/2||j==display-1 && i<=display/2)//P
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||i==0||i==display/2||j==display-1 && i<=display/2)//P
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(i==j && i<=(display/2)||(i+j==(display-1)&&j>(display/2))||(j==(display/2)&&i>(display/2)))//y
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("         ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||i==0||i==display/2||j==display-1 && i<=display/2)//P
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(i==0||j==0||j==display-1||i==display-1)//O
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||j==display-1||i==j)//N
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||i==0||i==display-1||j==display-1&&(i>=(display/2))||i==(display/2)&&(j>=(display/2)))//G
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(i==0||j==0||i==display/2||j==display-1)//A
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||i==display-1)//L
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.println();
+  }
+  System.out.println();
+  System.out.println();
+  System.out.println();
+  for(int i=0;i<display;i++)
+	{
+	  Thread.sleep(2000);
+		for(int j=0;j<display;j++)
+		{
+			if(i==0||j==0&&i<(display/2)||i==(display/2)||j==(display-1)&&i>=(display/2)||i==(display-1))//S
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||j==display-1||i==display/2)//H
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(i==0||j==0||i==display/2||j==display-1)//A
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||j==(display-1)||i==j&&j<=(display/2)||i+j==(display-1)&&j>=(display/2))//M
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(i==0||j==0||j==(display-1)||i==(display/2)||i==(display-1))//B
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");	
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||j==display-1||i==display/2)//H
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(j==0||j==(display-1)||i==(display-1))//U
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("        ");
+		for(int j=0;j<display;j++)
+		{
+			if(i==0||j==0&&i<(display/2)||i==(display/2)||j==(display-1)&&i>=(display/2)||i==(display-1))//S
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");	
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(i==0||j==(display/2)||i==(display-1))//I
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");	
+				Thread.sleep(10);
+			}
+		}
+		System.out.print("   ");
+		for(int j=0;j<display;j++)
+		{
+			if(i==0||j==(display-1)&&i<(display/2)||j==0||i==j&&(i>(display/2))||i==(display/2))//R
+			{
+				System.out.print("*");
+				Thread.sleep(10);
+			}
+			else
+			{
+				System.out.print(" ");
+				Thread.sleep(10);
+			}
+		}
+		System.out.println();
+	}	
+  sc.close();
+}
+}
